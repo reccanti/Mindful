@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B735BECC1EBAE15B009C7786 /* Cliff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B735BECA1EBAD3BC009C7786 /* Cliff.mp4 */; };
 		B7AE0BD71EBA2DBC007F515A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE0BD61EBA2DBC007F515A /* AppDelegate.swift */; };
-		B7AE0BD91EBA2DBC007F515A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE0BD81EBA2DBC007F515A /* ViewController.swift */; };
+		B7AE0BD91EBA2DBC007F515A /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE0BD81EBA2DBC007F515A /* SceneViewController.swift */; };
 		B7AE0BDC1EBA2DBC007F515A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AE0BDA1EBA2DBC007F515A /* Main.storyboard */; };
 		B7AE0BDE1EBA2DBC007F515A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7AE0BDD1EBA2DBC007F515A /* Assets.xcassets */; };
 		B7AE0BE11EBA2DBC007F515A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AE0BDF1EBA2DBC007F515A /* LaunchScreen.storyboard */; };
@@ -17,9 +18,11 @@
 
 /* Begin PBXFileReference section */
 		A072937678DA85BDAEF1B816 /* Pods-Mindful.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindful.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mindful/Pods-Mindful.debug.xcconfig"; sourceTree = "<group>"; };
+		B735BEC91EBAD330009C7786 /* Mindful_Bridging_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mindful_Bridging_Header.h; sourceTree = "<group>"; };
+		B735BECA1EBAD3BC009C7786 /* Cliff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cliff.mp4; sourceTree = "<group>"; };
 		B7AE0BD31EBA2DBC007F515A /* Mindful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mindful.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7AE0BD61EBA2DBC007F515A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B7AE0BD81EBA2DBC007F515A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7AE0BD81EBA2DBC007F515A /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
 		B7AE0BDB1EBA2DBC007F515A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7AE0BDD1EBA2DBC007F515A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7AE0BE01EBA2DBC007F515A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B735BECB1EBAE036009C7786 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		B7AE0BCA1EBA2DBC007F515A = {
 			isa = PBXGroup;
 			children = (
@@ -70,12 +80,15 @@
 		B7AE0BD51EBA2DBC007F515A /* Mindful */ = {
 			isa = PBXGroup;
 			children = (
+				B735BECB1EBAE036009C7786 /* New Group */,
 				B7AE0BD61EBA2DBC007F515A /* AppDelegate.swift */,
-				B7AE0BD81EBA2DBC007F515A /* ViewController.swift */,
+				B7AE0BD81EBA2DBC007F515A /* SceneViewController.swift */,
 				B7AE0BDA1EBA2DBC007F515A /* Main.storyboard */,
 				B7AE0BDD1EBA2DBC007F515A /* Assets.xcassets */,
 				B7AE0BDF1EBA2DBC007F515A /* LaunchScreen.storyboard */,
+				B735BECA1EBAD3BC009C7786 /* Cliff.mp4 */,
 				B7AE0BE21EBA2DBC007F515A /* Info.plist */,
+				B735BEC91EBAD330009C7786 /* Mindful_Bridging_Header.h */,
 			);
 			path = Mindful;
 			sourceTree = "<group>";
@@ -154,6 +167,7 @@
 				B7AE0BE11EBA2DBC007F515A /* LaunchScreen.storyboard in Resources */,
 				B7AE0BDE1EBA2DBC007F515A /* Assets.xcassets in Resources */,
 				B7AE0BDC1EBA2DBC007F515A /* Main.storyboard in Resources */,
+				B735BECC1EBAE15B009C7786 /* Cliff.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7AE0BD91EBA2DBC007F515A /* ViewController.swift in Sources */,
+				B7AE0BD91EBA2DBC007F515A /* SceneViewController.swift in Sources */,
 				B7AE0BD71EBA2DBC007F515A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +358,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reccanti.Mindful;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Mindful/Mindful_Bridging_Header.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -358,6 +373,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reccanti.Mindful;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Mindful/Mindful_Bridging_Header.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -381,6 +397,7 @@
 				B7AE0BE71EBA2DBC007F515A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

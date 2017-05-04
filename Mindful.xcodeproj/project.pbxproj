@@ -118,9 +118,9 @@
 		B7AE0BD51EBA2DBC007F515A /* Mindful */ = {
 			isa = PBXGroup;
 			children = (
+				B735BECB1EBAE036009C7786 /* Files */,
 				B735BED21EBAF971009C7786 /* Models */,
 				B735BED11EBAF966009C7786 /* Controllers */,
-				B735BECB1EBAE036009C7786 /* Files */,
 				B7AE0BD61EBA2DBC007F515A /* AppDelegate.swift */,
 				B7AE0BDA1EBA2DBC007F515A /* Main.storyboard */,
 				B7AE0BDD1EBA2DBC007F515A /* Assets.xcassets */,

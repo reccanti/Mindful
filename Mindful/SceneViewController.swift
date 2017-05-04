@@ -13,26 +13,28 @@ class SceneViewController: UIViewController, GVRVideoViewDelegate {
     
     @IBOutlet weak var sceneVRView: GVRVideoView!
     var track: AVAudioPlayer!
-    
-    var sceneVideo: String!
-    var sceneAudio: String!
+    var scene: Scene!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        // TODO: - load dynamic scene elsewhere and pass here
+        let sceneVideo = Bundle.main.url(forResource: "Cliff", withExtension: "mp4")!
+        let sceneAudio = Bundle.main.url(forResource: "01_Breathing_Meditation", withExtension: "mp3")!
+        scene = Scene(withLocationVideo: sceneVideo, withMeditationTrack: sceneAudio)
+        
+        
         // initialize the Video for the scene
-        sceneVideo = Bundle.main.path(forResource: "Cliff", ofType: "mp4")!
         
         sceneVRView.delegate = self
         sceneVRView.enableFullscreenButton = true
         sceneVRView.enableCardboardButton = true
-        sceneVRView.load(from: URL(fileURLWithPath: sceneVideo))
+        sceneVRView.load(from: scene.video)
         
         // initialize the audio for the scene
-        sceneAudio = Bundle.main.path(forResource: "01_Breathing_Meditation", ofType: "mp3")
         
-        try! track = AVAudioPlayer(contentsOf: URL(fileURLWithPath: sceneAudio))
+        try! track = AVAudioPlayer(contentsOf: scene.audio)
         try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
         track.prepareToPlay()
         track.play()

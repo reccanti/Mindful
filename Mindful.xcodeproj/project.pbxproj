@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B735BECC1EBAE15B009C7786 /* Cliff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B735BECA1EBAD3BC009C7786 /* Cliff.mp4 */; };
+		B735BED01EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B735BECF1EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 */; };
 		B7AE0BD71EBA2DBC007F515A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE0BD61EBA2DBC007F515A /* AppDelegate.swift */; };
 		B7AE0BD91EBA2DBC007F515A /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE0BD81EBA2DBC007F515A /* SceneViewController.swift */; };
 		B7AE0BDC1EBA2DBC007F515A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AE0BDA1EBA2DBC007F515A /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 		A072937678DA85BDAEF1B816 /* Pods-Mindful.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindful.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mindful/Pods-Mindful.debug.xcconfig"; sourceTree = "<group>"; };
 		B735BEC91EBAD330009C7786 /* Mindful_Bridging_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mindful_Bridging_Header.h; sourceTree = "<group>"; };
 		B735BECA1EBAD3BC009C7786 /* Cliff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cliff.mp4; sourceTree = "<group>"; };
+		B735BECF1EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Breathing_Meditation.mp3; sourceTree = "<group>"; };
 		B7AE0BD31EBA2DBC007F515A /* Mindful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mindful.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7AE0BD61EBA2DBC007F515A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7AE0BD81EBA2DBC007F515A /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
@@ -52,11 +54,29 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		B735BECB1EBAE036009C7786 /* New Group */ = {
+		B735BECB1EBAE036009C7786 /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				B735BECE1EBAED90009C7786 /* Audio */,
+				B735BECD1EBAED81009C7786 /* Video */,
 			);
-			name = "New Group";
+			name = Files;
+			sourceTree = "<group>";
+		};
+		B735BECD1EBAED81009C7786 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				B735BECA1EBAD3BC009C7786 /* Cliff.mp4 */,
+			);
+			name = Video;
+			sourceTree = "<group>";
+		};
+		B735BECE1EBAED90009C7786 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				B735BECF1EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 */,
+			);
+			name = Audio;
 			sourceTree = "<group>";
 		};
 		B7AE0BCA1EBA2DBC007F515A = {
@@ -80,13 +100,12 @@
 		B7AE0BD51EBA2DBC007F515A /* Mindful */ = {
 			isa = PBXGroup;
 			children = (
-				B735BECB1EBAE036009C7786 /* New Group */,
+				B735BECB1EBAE036009C7786 /* Files */,
 				B7AE0BD61EBA2DBC007F515A /* AppDelegate.swift */,
 				B7AE0BD81EBA2DBC007F515A /* SceneViewController.swift */,
 				B7AE0BDA1EBA2DBC007F515A /* Main.storyboard */,
 				B7AE0BDD1EBA2DBC007F515A /* Assets.xcassets */,
 				B7AE0BDF1EBA2DBC007F515A /* LaunchScreen.storyboard */,
-				B735BECA1EBAD3BC009C7786 /* Cliff.mp4 */,
 				B7AE0BE21EBA2DBC007F515A /* Info.plist */,
 				B735BEC91EBAD330009C7786 /* Mindful_Bridging_Header.h */,
 			);
@@ -167,6 +186,7 @@
 				B7AE0BE11EBA2DBC007F515A /* LaunchScreen.storyboard in Resources */,
 				B7AE0BDE1EBA2DBC007F515A /* Assets.xcassets in Resources */,
 				B7AE0BDC1EBA2DBC007F515A /* Main.storyboard in Resources */,
+				B735BED01EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 in Resources */,
 				B735BECC1EBAE15B009C7786 /* Cliff.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

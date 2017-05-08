@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Scene BuilderVC-->
+        <!--Build Scene-->
         <scene sceneID="mcO-RX-hz8">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="fVU-SO-kYA" customClass="SceneBuilderVC" customModule="Mindful" customModuleProvider="target" sceneMemberID="viewController">
@@ -65,7 +65,7 @@
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" id="Otd-ru-mx1"/>
+                    <navigationItem key="navigationItem" title="Build Scene" id="Otd-ru-mx1"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZ9-0e-3xy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B700F10A1EC118EF0034EB5C /* SceneBuilderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700F1091EC118EF0034EB5C /* SceneBuilderVC.swift */; };
 		B735BECC1EBAE15B009C7786 /* Cliff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B735BECA1EBAD3BC009C7786 /* Cliff.mp4 */; };
 		B735BED01EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B735BECF1EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 */; };
 		B735BED41EBAFB3D009C7786 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735BED31EBAFB3D009C7786 /* Scene.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		A072937678DA85BDAEF1B816 /* Pods-Mindful.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindful.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mindful/Pods-Mindful.debug.xcconfig"; sourceTree = "<group>"; };
+		B700F1091EC118EF0034EB5C /* SceneBuilderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneBuilderVC.swift; sourceTree = "<group>"; };
 		B735BEC91EBAD330009C7786 /* Mindful_Bridging_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mindful_Bridging_Header.h; sourceTree = "<group>"; };
 		B735BECA1EBAD3BC009C7786 /* Cliff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cliff.mp4; sourceTree = "<group>"; };
 		B735BECF1EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Breathing_Meditation.mp3; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				B7AE0BD81EBA2DBC007F515A /* SceneViewController.swift */,
+				B700F1091EC118EF0034EB5C /* SceneBuilderVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7AE0BD91EBA2DBC007F515A /* SceneViewController.swift in Sources */,
+				B700F10A1EC118EF0034EB5C /* SceneBuilderVC.swift in Sources */,
 				B7AE0BD71EBA2DBC007F515A /* AppDelegate.swift in Sources */,
 				B735BED41EBAFB3D009C7786 /* Scene.swift in Sources */,
 			);

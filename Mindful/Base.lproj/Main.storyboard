@@ -21,10 +21,10 @@
                             <tableViewSection headerTitle="Location" id="nHw-LF-ANX">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SceneCell" id="SJ7-E1-INd">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SJ7-E1-INd" id="TxZ-MJ-7t6">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
@@ -38,10 +38,10 @@
                             <tableViewSection headerTitle="Meditation Track" id="EMF-nb-Vwz">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SceneCell" id="qDl-36-TbN">
-                                        <rect key="frame" x="0.0" y="157" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="155.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qDl-36-TbN" id="nEO-Ej-jJm">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
@@ -71,7 +71,7 @@
             </objects>
             <point key="canvasLocation" x="888.79999999999995" y="-913.49325337331345"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Select Location-->
         <scene sceneID="xaD-QK-Zbn">
             <objects>
                 <tableViewController id="Nca-iJ-fFU" sceneMemberID="viewController">
@@ -84,7 +84,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qVS-zk-0Z9" id="EGh-CQ-ChK">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -94,16 +94,23 @@
                             <outlet property="delegate" destination="Nca-iJ-fFU" id="oer-u7-03C"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="DRu-En-zfT"/>
+                    <navigationItem key="navigationItem" title="Select Location" id="DRu-En-zfT">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="hTq-Np-W5j">
+                            <connections>
+                                <segue destination="rCA-Ac-jGN" kind="unwind" unwindAction="cancelToSceneBuilderWithSegue:" id="48q-Pw-ABs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ycR-T6-47y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rCA-Ac-jGN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3140" y="-1214.8425787106448"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Select Meditation Track-->
         <scene sceneID="LaW-Kh-fEZ">
             <objects>
-                <tableViewController id="aLb-VK-hJS" sceneMemberID="viewController">
+                <tableViewController id="aLb-VK-hJS" customClass="MeditationTrackTableVC" customModule="Mindful" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="tSM-Tn-7GU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,7 +120,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8cr-Da-hBa" id="6A4-Yp-mRX">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -123,13 +130,20 @@
                             <outlet property="delegate" destination="aLb-VK-hJS" id="fHK-Eo-c51"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="8FV-oX-hjO"/>
+                    <navigationItem key="navigationItem" title="Select Meditation Track" id="8FV-oX-hjO">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="AG1-Fe-0WT">
+                            <connections>
+                                <segue destination="8HW-SF-XEB" kind="unwind" unwindAction="cancelToSceneBuilderWithSegue:" id="8XK-k6-CQt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Yp-9X-cLZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="8HW-SF-XEB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3140" y="-483.50824587706148"/>
         </scene>
-        <!--Scene View Controller-->
+        <!--Scene-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SceneViewController" customModule="Mindful" customModuleProvider="target" sceneMemberID="viewController">
@@ -142,12 +156,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5Ll-mF-EIk"/>
+                    <navigationItem key="navigationItem" title="Scene" id="5Ll-mF-EIk">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="g0X-q3-9xt">
+                            <connections>
+                                <segue destination="fMi-Ft-Lmb" kind="unwind" unwindAction="cancelToSceneBuilderWithSegue:" id="bNo-RB-agr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="sceneVRView" destination="8bC-Xf-vdC" id="Qam-Yw-YPO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="fMi-Ft-Lmb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1172" y="238.83058470764618"/>
         </scene>
@@ -214,7 +235,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yse-MO-EW0" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VC8-iP-VKU">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VC8-iP-VKU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

@@ -20,7 +20,7 @@
                         <sections>
                             <tableViewSection headerTitle="Location" id="nHw-LF-ANX">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SceneCell" id="SJ7-E1-INd">
+                                    <tableViewCell clipsSubviews="YES" tag="100" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SceneCell" id="SJ7-E1-INd">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SJ7-E1-INd" id="TxZ-MJ-7t6">
@@ -37,7 +37,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Meditation Track" id="EMF-nb-Vwz">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SceneCell" id="qDl-36-TbN">
+                                    <tableViewCell clipsSubviews="YES" tag="101" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SceneCell" id="qDl-36-TbN">
                                         <rect key="frame" x="0.0" y="155.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qDl-36-TbN" id="nEO-Ej-jJm">
@@ -66,6 +66,10 @@
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Build Scene" id="Otd-ru-mx1"/>
+                    <connections>
+                        <outlet property="locationCell" destination="SJ7-E1-INd" id="ur5-tN-aML"/>
+                        <outlet property="meditationTrackCell" destination="qDl-36-TbN" id="39K-39-zly"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZ9-0e-3xy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -137,6 +141,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="8HW-SF-XEB" kind="unwind" identifier="unwindWithTrack" unwindAction="unwindWithTrackWithSender:" id="gJD-7Z-zVK"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Yp-9X-cLZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="8HW-SF-XEB" userLabel="Exit" sceneMemberID="exit"/>

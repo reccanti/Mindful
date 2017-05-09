@@ -10,6 +10,9 @@ import UIKit
 
 class MeditationTrackTableVC: UITableViewController {
 
+    // MARK: - ivars
+    var selectedAsset: Asset?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -52,6 +55,14 @@ class MeditationTrackTableVC: UITableViewController {
 
         return cell
     }
+    
+    /**
+     * Detect when the cell is tapped
+     */
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedAsset = DataManager.instance.trackAssets[indexPath.row]
+        performSegue(withIdentifier: "unwindWithTrack", sender: self)
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -92,9 +103,16 @@ class MeditationTrackTableVC: UITableViewController {
     
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-//    }
+        if segue.identifier == "unwindWithTrack" {
+            guard let destination = segue.destination as? SceneBuilderVC else {
+                return
+            }
+            destination.meditationTrack = selectedAsset
+            print(selectedAsset)
+        }
+    }
 
 }

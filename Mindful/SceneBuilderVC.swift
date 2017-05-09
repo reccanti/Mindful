@@ -10,9 +10,14 @@ import UIKit
 
 class SceneBuilderVC: UITableViewController {
 
+    // MARK: - ivars
+    var meditationTrack: Asset?
+    @IBOutlet weak var locationCell: UITableViewCell!
+    @IBOutlet weak var meditationTrackCell: UITableViewCell!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        updateLabels()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -23,6 +28,15 @@ class SceneBuilderVC: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    /**
+     * a function that updates the labels of
+     * the table cells to display the name of the
+     * asset
+     */
+    private func updateLabels() {
+        meditationTrackCell.textLabel?.text = meditationTrack?.name ?? "(None)"
     }
 
     // MARK: - Table view data source
@@ -100,6 +114,16 @@ class SceneBuilderVC: UITableViewController {
     @IBAction func cancelToSceneBuilder(segue: UIStoryboardSegue) {
         //
         print("cancel")
+    }
+    
+    /**
+     * Unwind to this view with a meditation track
+     */
+    @IBAction func unwindWithTrack(sender: UIStoryboardSegue) {
+//        if let sourceViewController = sender.source as? MeditationTrackTableVC {
+//            meditationTrack = sourceViewController.selectedAsset
+//        }
+        updateLabels()
     }
 
 }

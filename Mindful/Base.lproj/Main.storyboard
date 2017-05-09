@@ -61,7 +61,7 @@
                     <toolbarItems>
                         <barButtonItem title="Begin" id="O57-0t-143">
                             <connections>
-                                <segue destination="yse-MO-EW0" kind="show" id="OPu-m7-hOh"/>
+                                <segue destination="yse-MO-EW0" kind="show" identifier="loadSceneSegue" id="OPu-m7-hOh"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>

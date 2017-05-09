@@ -21,6 +21,8 @@ class SceneViewController: UIViewController, GVRVideoViewDelegate {
         
         // TODO: - load dynamic scene elsewhere and pass here
 //        scene = Scene(withLocationVideo: sceneVideo, withMeditationTrack: sceneAudio)
+        print(scene.video)
+        print(scene.audio)
         
         
         // initialize the Video for the scene

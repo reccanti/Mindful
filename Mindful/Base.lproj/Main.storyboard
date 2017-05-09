@@ -105,6 +105,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="rCA-Ac-jGN" kind="unwind" identifier="unwindWithLocation" unwindAction="unwindWithLocationWithSender:" id="S5R-XO-lUL"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ycR-T6-47y" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="rCA-Ac-jGN" userLabel="Exit" sceneMemberID="exit"/>

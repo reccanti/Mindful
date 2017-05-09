@@ -10,6 +10,8 @@ import UIKit
 
 class LocationTableVC: UITableViewController {
 
+    var selectedAsset: Asset?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,7 +40,6 @@ class LocationTableVC: UITableViewController {
      * Get the number of rows to display in the section
      */
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(DataManager.instance.videoAssets)
         return DataManager.instance.videoAssets.count
     }
     
@@ -52,6 +53,14 @@ class LocationTableVC: UITableViewController {
         cell.textLabel?.text = DataManager.instance.videoAssets[indexPath.row].name
 
         return cell
+    }
+    
+    /**
+     * Detect when the cell is tapped
+     */
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedAsset = DataManager.instance.videoAssets[indexPath.row]
+        performSegue(withIdentifier: "unwindWithLocation", sender: self)
     }
 
     /*
@@ -93,8 +102,12 @@ class LocationTableVC: UITableViewController {
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "unwindWithLocation" {
+            guard let destination = segue.destination as? SceneBuilderVC else {
+                return
+            }
+            destination.location = selectedAsset
+        }
     }
 
 }

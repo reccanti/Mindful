@@ -12,6 +12,7 @@ class SceneBuilderVC: UITableViewController {
 
     // MARK: - ivars
     var meditationTrack: Asset?
+    var location: Asset?
     @IBOutlet weak var locationCell: UITableViewCell!
     @IBOutlet weak var meditationTrackCell: UITableViewCell!
     
@@ -37,6 +38,7 @@ class SceneBuilderVC: UITableViewController {
      */
     private func updateLabels() {
         meditationTrackCell.textLabel?.text = meditationTrack?.name ?? "(None)"
+        locationCell.textLabel?.text = location?.name ?? "(None)"
     }
 
     // MARK: - Table view data source
@@ -113,16 +115,20 @@ class SceneBuilderVC: UITableViewController {
      */
     @IBAction func cancelToSceneBuilder(segue: UIStoryboardSegue) {
         //
-        print("cancel")
     }
     
     /**
      * Unwind to this view with a meditation track
      */
     @IBAction func unwindWithTrack(sender: UIStoryboardSegue) {
-//        if let sourceViewController = sender.source as? MeditationTrackTableVC {
-//            meditationTrack = sourceViewController.selectedAsset
-//        }
+        updateLabels()
+    }
+    
+    /**
+     * Unwind to this view with a location
+     */
+    @IBAction func unwindWithLocation(sender: UIStoryboardSegue) {
+        print(location)
         updateLabels()
     }
 

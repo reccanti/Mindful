@@ -20,9 +20,7 @@ class SceneViewController: UIViewController, GVRVideoViewDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         
         // TODO: - load dynamic scene elsewhere and pass here
-        let sceneVideo = Bundle.main.url(forResource: "Cliff", withExtension: "mp4")!
-        let sceneAudio = Bundle.main.url(forResource: "01_Breathing_Meditation", withExtension: "mp3")!
-        scene = Scene(withLocationVideo: sceneVideo, withMeditationTrack: sceneAudio)
+//        scene = Scene(withLocationVideo: sceneVideo, withMeditationTrack: sceneAudio)
         
         
         // initialize the Video for the scene

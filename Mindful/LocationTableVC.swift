@@ -27,25 +27,32 @@ class LocationTableVC: UITableViewController {
 
     // MARK: - Table view data source
 
+    /**
+     * The number of sections to display
+     */
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
-
+    
+    /**
+     * Get the number of rows to display in the section
+     */
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        print(DataManager.instance.videoAssets)
+        return DataManager.instance.videoAssets.count
     }
-
-    /*
+    
+    /**
+     * Configure each cell
+     */
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "videoID", for: indexPath)
 
         // Configure the cell...
+        cell.textLabel?.text = DataManager.instance.videoAssets[indexPath.row].name
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

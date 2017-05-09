@@ -25,38 +25,33 @@ class MeditationTrackTableVC: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - UI Controls
-    
-//    /**
-//     * Handles what happens when the
-//     * Cancel button is tapped
-//     */
-//    @IBAction func cancelButtonTapped(_ sender: UIBarButtonItem) {
-//        
-//        self.performSegue(withIdentifier: "cancelToSceneBuilderFromTrack", sender: self)
-//        
-//    }
     // MARK: - Table view data source
 
+    /**
+     * The number of sections to display
+     */
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
+    /**
+     * Get the number of rows to display in the section
+     */
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return DataManager.instance.trackAssets.count
     }
 
-    /*
+    /**
+     * Configure each cell
+     */
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "meditationTrackID", for: indexPath)
 
         // Configure the cell...
+        cell.textLabel?.text = DataManager.instance.trackAssets[indexPath.row].name
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

@@ -7,5 +7,6 @@ target 'Mindful' do
 
   # Pods for Mindful
   pod 'GVRSDK'
+  pod 'lottie-ios'
 
 end

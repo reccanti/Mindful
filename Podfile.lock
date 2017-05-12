@@ -6,15 +6,18 @@ PODS:
   - GVRSDK (1.40.0):
     - GoogleToolboxForMac/Logger (= 2.1.0)
     - GTMSessionFetcher/Core (= 1.1.6)
+  - lottie-ios (1.5.1)
 
 DEPENDENCIES:
   - GVRSDK
+  - lottie-ios
 
 SPEC CHECKSUMS:
   GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
   GTMSessionFetcher: 6aacd0ab48ddf0c3633ab2642d792abfcad1b08a
   GVRSDK: bb909f6edca540b499b512b612375002613dbde6
+  lottie-ios: f680a7c4cb7a567ecf258fde0f967913aff111b8
 
-PODFILE CHECKSUM: ed2e250afec4e743e49780df4964d50735e41b71
+PODFILE CHECKSUM: 1bcf1c27c82a59c13980df0a22c6cc3f517e305e
 
 COCOAPODS: 1.2.0

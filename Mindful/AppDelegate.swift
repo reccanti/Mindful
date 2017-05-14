@@ -21,6 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         DataManager.instance.loadVideoAssets()
         DataManager.instance.loadTrackAssets()
         
+        // print out a list of all custom fonts
+        for font in UIFont.familyNames {
+            print(font)
+        }
+        
         return true
     }
 

@@ -13,10 +13,39 @@
         <scene sceneID="mcO-RX-hz8">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="fVU-SO-kYA" customClass="SceneBuilderVC" customModule="Mindful" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="wgq-YZ-JOh">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="static" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="wgq-YZ-JOh">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.92959254979999995" green="0.93116515870000005" blue="0.82690340279999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" misplaced="YES" id="edj-7d-bDV">
+                            <rect key="frame" x="0.0" y="217.5" width="375" height="126"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="bottom" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="se6-3P-qDR">
+                                    <rect key="frame" x="8" y="78.5" width="357.5" height="48.5"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                    <color key="backgroundColor" red="0.069868110120296478" green="0.57973355054855347" blue="0.43242192268371582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                                    <state key="normal" title="Begin">
+                                        <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <segue destination="yse-MO-EW0" kind="show" identifier="loadSceneSegue" id="xLb-zF-4tZ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="bottom" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGN-nr-7Ka">
+                                    <rect key="frame" x="8" y="20" width="357.5" height="51"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                    <color key="backgroundColor" red="0.10199221223592758" green="0.25732722878456116" blue="0.34892204403877258" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <state key="normal" title="Save Scene">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                        </view>
                         <sections>
                             <tableViewSection headerTitle="Location" id="nHw-LF-ANX">
                                 <cells>
@@ -43,7 +72,10 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qDl-36-TbN" id="nEO-Ej-jJm">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                         <connections>
                                             <segue destination="Yqs-E0-ehY" kind="popoverPresentation" popoverAnchorView="qDl-36-TbN" id="gV4-Nf-r5B">
                                                 <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
@@ -58,16 +90,14 @@
                             <outlet property="delegate" destination="fVU-SO-kYA" id="8Y4-TQ-rJD"/>
                         </connections>
                     </tableView>
-                    <toolbarItems>
-                        <barButtonItem title="Begin" id="O57-0t-143">
-                            <connections>
-                                <segue destination="yse-MO-EW0" kind="show" identifier="loadSceneSegue" id="OPu-m7-hOh"/>
-                            </connections>
-                        </barButtonItem>
-                    </toolbarItems>
-                    <navigationItem key="navigationItem" title="Build Scene" id="Otd-ru-mx1"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Build Scene" id="Otd-ru-mx1">
+                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="HaA-HC-X6i"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="font" value="Raleway"/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="locationCell" destination="SJ7-E1-INd" id="ur5-tN-aML"/>
                         <outlet property="meditationTrackCell" destination="qDl-36-TbN" id="39K-39-zly"/>
@@ -82,7 +112,7 @@
             <objects>
                 <tableViewController id="Nca-iJ-fFU" customClass="LocationTableVC" customModule="Mindful" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="A1w-1f-DBy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -121,7 +151,7 @@
             <objects>
                 <tableViewController id="aLb-VK-hJS" customClass="MeditationTrackTableVC" customModule="Mindful" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="tSM-Tn-7GU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -164,7 +194,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="GVRVideoView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -189,9 +219,13 @@
             <objects>
                 <navigationController title="Create Scene" automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="xIN-bo-Myj" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cg9-4R-FqS">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" clearsContextBeforeDrawing="NO" alpha="0.0" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Cg9-4R-FqS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Oap-au-inm">
@@ -211,7 +245,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3xV-k4-P2v" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F7B-6T-lnV">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="F7B-6T-lnV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -229,7 +264,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yqs-E0-ehY" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="68w-fD-L8b">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="68w-fD-L8b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -247,8 +283,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yse-MO-EW0" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VC8-iP-VKU">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="VC8-iP-VKU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

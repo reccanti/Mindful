@@ -24,6 +24,9 @@ class SceneBuilderVC: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        // set styles
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,8 +43,6 @@ class SceneBuilderVC: UITableViewController {
         meditationTrackCell.textLabel?.text = meditationTrack?.name ?? "(None)"
         locationCell.textLabel?.text = location?.name ?? "(None)"
     }
-
-    // MARK: - Table view data source
 
 //    override func numberOfSections(in tableView: UITableView) -> Int {
 //        // #warning Incomplete implementation, return the number of sections

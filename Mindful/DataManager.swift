@@ -12,6 +12,7 @@ class DataManager {
     static let instance = DataManager()
     var videoAssets: [Asset] = []
     var trackAssets: [Asset] = []
+    private var favorites: [String: Scene] = [:]
     private init() {}
     
     // TODO: - load assets from an external source

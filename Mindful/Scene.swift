@@ -14,13 +14,13 @@ import Foundation
  */
 class Scene {
     
-    let video: URL
-    let audio: URL
+    let video: Asset
+    let audio: Asset
     
     /**
      * Initialize the audio and video urls of the scene
      */
-    init(withLocationVideo video: URL, withMeditationTrack audio: URL) {
+    init(withLocationVideo video: Asset, withMeditationTrack audio: Asset) {
         self.video = video
         self.audio = audio
     }

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,16 +14,16 @@
         <scene sceneID="mcO-RX-hz8">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="fVU-SO-kYA" customClass="SceneBuilderVC" customModule="Mindful" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="static" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="wgq-YZ-JOh">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="wgq-YZ-JOh">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <view key="tableFooterView" contentMode="scaleToFill" misplaced="YES" id="edj-7d-bDV">
-                            <rect key="frame" x="0.0" y="217.5" width="375" height="126"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="edj-7d-bDV">
+                            <rect key="frame" x="0.0" y="217.5" width="375" height="128"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="bottom" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="se6-3P-qDR">
-                                    <rect key="frame" x="8" y="78.5" width="357.5" height="48.5"/>
+                                    <rect key="frame" x="8" y="80.5" width="357.5" height="48.5"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                     <color key="backgroundColor" red="0.069868110120296478" green="0.57973355054855347" blue="0.43242192268371582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
@@ -36,13 +37,16 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="bottom" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGN-nr-7Ka">
-                                    <rect key="frame" x="8" y="20" width="357.5" height="51"/>
+                                    <rect key="frame" x="8" y="22" width="357.5" height="51"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                    <color key="backgroundColor" red="0.10199221223592758" green="0.25732722878456116" blue="0.34892204403877258" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.31614053250000002" green="0.74501222369999998" blue="0.81307238339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                     <state key="normal" title="Save Scene">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <segue destination="JQA-18-0R5" kind="show" identifier="saveSceneSegue" id="yXY-3P-ep7"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </view>
@@ -98,6 +102,8 @@
                         </userDefinedRuntimeAttributes>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="locationCell" destination="SJ7-E1-INd" id="ur5-tN-aML"/>
                         <outlet property="meditationTrackCell" destination="qDl-36-TbN" id="39K-39-zly"/>
@@ -144,7 +150,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ycR-T6-47y" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="rCA-Ac-jGN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3140" y="-1214.8425787106448"/>
+            <point key="canvasLocation" x="3140" y="-913"/>
         </scene>
         <!--Select Meditation Track-->
         <scene sceneID="LaW-Kh-fEZ">
@@ -183,7 +189,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Yp-9X-cLZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="8HW-SF-XEB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3140" y="-483.50824587706148"/>
+            <point key="canvasLocation" x="3140" y="239"/>
         </scene>
         <!--Scene-->
         <scene sceneID="tne-QT-ifu">
@@ -220,6 +226,8 @@
                 <navigationController title="Create Scene" automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="xIN-bo-Myj" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" clearsContextBeforeDrawing="NO" alpha="0.0" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Cg9-4R-FqS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -246,6 +254,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3xV-k4-P2v" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="F7B-6T-lnV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -257,7 +267,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bel-mc-0GO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2200.8000000000002" y="-1214.8425787106448"/>
+            <point key="canvasLocation" x="2201" y="-913"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hUe-7U-ChL">
@@ -265,6 +275,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yqs-E0-ehY" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="68w-fD-L8b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -276,7 +288,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mQ5-NY-UWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2200.8000000000002" y="-483.50824587706148"/>
+            <point key="canvasLocation" x="2201" y="239"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="s7V-mz-yGL">
@@ -284,6 +296,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yse-MO-EW0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="VC8-iP-VKU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -296,6 +310,85 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bru-CA-hEu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="232.80000000000001" y="238.83058470764618"/>
+        </scene>
+        <!--Save Scene-->
+        <scene sceneID="Lbd-sQ-nC2">
+            <objects>
+                <viewController id="pUF-5k-r52" customClass="CreateFavoriteVC" customModule="Mindful" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m2t-wc-mxU"/>
+                        <viewControllerLayoutGuide type="bottom" id="hdD-Os-TqQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TaA-Dd-PUW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIy-6Y-6gd">
+                                <rect key="frame" x="16" y="318" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save Scene As..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYX-hl-tYP">
+                                <rect key="frame" x="16" y="289" width="127" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="bottom" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53X-Ts-P2e">
+                                <rect key="frame" x="16" y="356" width="343" height="51"/>
+                                <color key="backgroundColor" red="0.31614053250000002" green="0.74501222369999998" blue="0.81307238339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gIy-6Y-6gd" firstAttribute="centerY" secondItem="TaA-Dd-PUW" secondAttribute="centerY" id="1lS-Ik-jk0"/>
+                            <constraint firstItem="53X-Ts-P2e" firstAttribute="top" secondItem="gIy-6Y-6gd" secondAttribute="bottom" constant="8" id="906-Pp-oLX"/>
+                            <constraint firstItem="gIy-6Y-6gd" firstAttribute="leading" secondItem="PYX-hl-tYP" secondAttribute="leading" id="HCg-82-ad7"/>
+                            <constraint firstItem="gIy-6Y-6gd" firstAttribute="top" secondItem="PYX-hl-tYP" secondAttribute="bottom" constant="8" id="IA8-by-Tpl"/>
+                            <constraint firstItem="gIy-6Y-6gd" firstAttribute="trailing" secondItem="TaA-Dd-PUW" secondAttribute="trailingMargin" id="ZGl-LX-Syq"/>
+                            <constraint firstItem="53X-Ts-P2e" firstAttribute="leading" secondItem="gIy-6Y-6gd" secondAttribute="leading" id="ZLX-O7-R8Y"/>
+                            <constraint firstItem="53X-Ts-P2e" firstAttribute="trailing" secondItem="gIy-6Y-6gd" secondAttribute="trailing" id="sgu-OE-Xvr"/>
+                            <constraint firstItem="gIy-6Y-6gd" firstAttribute="leading" secondItem="TaA-Dd-PUW" secondAttribute="leadingMargin" id="zrp-ja-dYQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Save Scene" id="jzk-fS-bf5">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="gN7-Jc-Jiv">
+                            <connections>
+                                <segue destination="SLf-cd-oMP" kind="unwind" unwindAction="cancelToSceneBuilderWithSegue:" id="YnH-YI-vgK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nameField" destination="gIy-6Y-6gd" id="MjJ-tH-AaB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iFo-bI-Gz6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="SLf-cd-oMP" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3140" y="-1682.608695652174"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xUw-dR-ae8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JQA-18-0R5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="wX7-WA-FyM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pUF-5k-r52" kind="relationship" relationship="rootViewController" id="grl-Rb-bbO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SCS-73-hQT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2200.8000000000002" y="-1682.608695652174"/>
         </scene>
     </scenes>
 </document>

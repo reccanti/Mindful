@@ -30,11 +30,11 @@ class SceneViewController: UIViewController, GVRVideoViewDelegate {
         sceneVRView.delegate = self
         sceneVRView.enableFullscreenButton = true
         sceneVRView.enableCardboardButton = true
-        sceneVRView.load(from: scene.video)
+        sceneVRView.load(from: scene.video.url)
         
         // initialize the audio for the scene
         
-        try! track = AVAudioPlayer(contentsOf: scene.audio)
+        try! track = AVAudioPlayer(contentsOf: scene.audio.url)
         try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
         track.prepareToPlay()
         track.play()

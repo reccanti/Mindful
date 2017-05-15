@@ -13,6 +13,7 @@
 		B71548D81EC1671D00D05AE6 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71548D71EC1671D00D05AE6 /* Asset.swift */; };
 		B71548DB1EC1695D00D05AE6 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71548DA1EC1695D00D05AE6 /* DataManager.swift */; };
 		B71548E31EC5696100D05AE6 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71548E21EC5696100D05AE6 /* Raleway-Medium.ttf */; };
+		B71548E51EC825CB00D05AE6 /* CreateFavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71548E41EC825CB00D05AE6 /* CreateFavoriteVC.swift */; };
 		B735BECC1EBAE15B009C7786 /* Cliff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B735BECA1EBAD3BC009C7786 /* Cliff.mp4 */; };
 		B735BED01EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B735BECF1EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 */; };
 		B735BED41EBAFB3D009C7786 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735BED31EBAFB3D009C7786 /* Scene.swift */; };
@@ -32,6 +33,7 @@
 		B71548D71EC1671D00D05AE6 /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		B71548DA1EC1695D00D05AE6 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		B71548E21EC5696100D05AE6 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		B71548E41EC825CB00D05AE6 /* CreateFavoriteVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateFavoriteVC.swift; sourceTree = "<group>"; };
 		B735BEC91EBAD330009C7786 /* Mindful_Bridging_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mindful_Bridging_Header.h; sourceTree = "<group>"; };
 		B735BECA1EBAD3BC009C7786 /* Cliff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cliff.mp4; sourceTree = "<group>"; };
 		B735BECF1EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Breathing_Meditation.mp3; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				B700F10B1EC11B2C0034EB5C /* MeditationTrackTableVC.swift */,
 				B700F10D1EC11B420034EB5C /* LocationTableVC.swift */,
 				B700F1091EC118EF0034EB5C /* SceneBuilderVC.swift */,
+				B71548E41EC825CB00D05AE6 /* CreateFavoriteVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				B7AE0BD91EBA2DBC007F515A /* SceneViewController.swift in Sources */,
 				B71548DB1EC1695D00D05AE6 /* DataManager.swift in Sources */,
 				B71548D81EC1671D00D05AE6 /* Asset.swift in Sources */,
+				B71548E51EC825CB00D05AE6 /* CreateFavoriteVC.swift in Sources */,
 				B700F10A1EC118EF0034EB5C /* SceneBuilderVC.swift in Sources */,
 				B7AE0BD71EBA2DBC007F515A /* AppDelegate.swift in Sources */,
 				B735BED41EBAFB3D009C7786 /* Scene.swift in Sources */,

@@ -105,13 +105,18 @@ class SceneBuilderVC: UITableViewController {
                 return false
             }
         }
+        if identifier == "saveSceneSegue" {
+            guard let locationURL = location?.url, let meditationTrackURL = meditationTrack?.url else {
+                return false
+            }
+        }
         return true
     }
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        // pass location and track to scene VC
         if segue.identifier == "loadSceneSegue" {
             guard let destinationNav = segue.destination as? UINavigationController else {
                 return
@@ -119,8 +124,19 @@ class SceneBuilderVC: UITableViewController {
             guard let destination = destinationNav.topViewController as? SceneViewController else {
                 return
             }
-            print("preparing")
-            destination.scene = Scene(withLocationVideo: location!.url, withMeditationTrack: meditationTrack!.url)
+            destination.scene = Scene(withLocationVideo: location!, withMeditationTrack: meditationTrack!)
+        }
+        
+        // pass the location and track to the favorite VC
+        if segue.identifier == "saveSceneSegue" {
+            guard let destinationNav = segue.destination as? UINavigationController else {
+                return
+            }
+            guard let destination = destinationNav.topViewController as? CreateFavoriteVC else {
+                return
+            }
+            destination.location = location!
+            destination.meditationTrack = meditationTrack!
         }
         
     }

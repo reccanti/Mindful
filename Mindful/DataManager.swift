@@ -29,11 +29,16 @@ class DataManager {
      * load video assets.
      */
     func loadVideoAssets() {
-        let sceneVideo = Asset(
-            name: "Cliff",
-            url: Bundle.main.url(forResource: "Cliff2", withExtension: "mp4")!
-        )
-        videoAssets = [sceneVideo]
+        videoAssets = [
+            Asset(
+                name: "Cliff",
+                url: Bundle.main.url(forResource: "Cliff2", withExtension: "mp4")!
+            ),
+            Asset(
+                name: "Hills",
+                url: Bundle.main.url(forResource: "Hills", withExtension: "mp4")!
+            )
+        ]
     }
     
     /**
@@ -41,7 +46,7 @@ class DataManager {
      */
     func loadTrackAssets() {
         let sceneAudio = Asset(
-            name: "Breathing 01",
+            name: "Breathing",
             url: Bundle.main.url(forResource: "01_Breathing_Meditation", withExtension: "mp3")!
         )
         trackAssets = [sceneAudio]

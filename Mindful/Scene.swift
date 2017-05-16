@@ -12,7 +12,7 @@ import Foundation
  * A class that manages the audio and video
  * files of the meditation scene
  */
-class Scene: NSCoding {
+class Scene: NSObject, NSCoding {
     
     let video: Asset
     let audio: Asset

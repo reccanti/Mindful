@@ -27,6 +27,9 @@ class CreateFavoriteVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func saveSceneClicked(_ sender: Any) {
+        DataManager.instance.addToFavorites(name: nameField.text!, scene: Scene(withLocationVideo: location, withMeditationTrack: meditationTrack))
+    }
 
     /*
     // MARK: - Navigation

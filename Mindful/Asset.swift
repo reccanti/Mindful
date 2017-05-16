@@ -12,7 +12,7 @@ import Foundation
  * represents a media asset that can be loaded
  * into a Scene
  */
-class Asset: NSCoding {
+class Asset: NSObject, NSCoding {
     
     var url: URL
     var name: String

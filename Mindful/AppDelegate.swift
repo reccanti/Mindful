@@ -22,10 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         DataManager.instance.loadTrackAssets()
         
         // print out a list of all custom fonts
-        for font in UIFont.familyNames {
-            print(font)
-        }
-        
+//        for font in UIFont.familyNames {
+//            print(font)
+//        }
+
+        print(FileManager.documentsDirectory.path)
         return true
     }
 
@@ -37,6 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        DataManager.instance.saveFavorites()
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {

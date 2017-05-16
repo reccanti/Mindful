@@ -37,6 +37,10 @@ class DataManager {
             Asset(
                 name: "Hills",
                 url: Bundle.main.url(forResource: "Hills", withExtension: "mp4")!
+            ),
+            Asset(
+                name: "Beach",
+                url: Bundle.main.url(forResource: "Beach", withExtension: "mp4")!
             )
         ]
     }

@@ -18,6 +18,7 @@
 		B71548EA1ECA87F400D05AE6 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71548E91ECA87F400D05AE6 /* FileManager.swift */; };
 		B71548EC1ECAA9DF00D05AE6 /* Cliff2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B71548EB1ECAA8A800D05AE6 /* Cliff2.mp4 */; };
 		B71548EE1ECAAFFF00D05AE6 /* Hills.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B71548ED1ECAAFB600D05AE6 /* Hills.mp4 */; };
+		B71548F01ECAB37600D05AE6 /* Beach.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B71548EF1ECAB37600D05AE6 /* Beach.mp4 */; };
 		B735BECC1EBAE15B009C7786 /* Cliff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B735BECA1EBAD3BC009C7786 /* Cliff.mp4 */; };
 		B735BED01EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B735BECF1EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 */; };
 		B735BED41EBAFB3D009C7786 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735BED31EBAFB3D009C7786 /* Scene.swift */; };
@@ -42,6 +43,7 @@
 		B71548E91ECA87F400D05AE6 /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		B71548EB1ECAA8A800D05AE6 /* Cliff2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cliff2.mp4; sourceTree = "<group>"; };
 		B71548ED1ECAAFB600D05AE6 /* Hills.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hills.mp4; sourceTree = "<group>"; };
+		B71548EF1ECAB37600D05AE6 /* Beach.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Beach.mp4; sourceTree = "<group>"; };
 		B735BEC91EBAD330009C7786 /* Mindful_Bridging_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mindful_Bridging_Header.h; sourceTree = "<group>"; };
 		B735BECA1EBAD3BC009C7786 /* Cliff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cliff.mp4; sourceTree = "<group>"; };
 		B735BECF1EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Breathing_Meditation.mp3; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				B71548EB1ECAA8A800D05AE6 /* Cliff2.mp4 */,
+				B71548EF1ECAB37600D05AE6 /* Beach.mp4 */,
 				B71548ED1ECAAFB600D05AE6 /* Hills.mp4 */,
 				B735BECA1EBAD3BC009C7786 /* Cliff.mp4 */,
 			);
@@ -266,6 +269,7 @@
 				B7AE0BDE1EBA2DBC007F515A /* Assets.xcassets in Resources */,
 				B7AE0BDC1EBA2DBC007F515A /* Main.storyboard in Resources */,
 				B735BED01EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 in Resources */,
+				B71548F01ECAB37600D05AE6 /* Beach.mp4 in Resources */,
 				B735BECC1EBAE15B009C7786 /* Cliff.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

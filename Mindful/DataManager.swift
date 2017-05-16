@@ -31,7 +31,7 @@ class DataManager {
     func loadVideoAssets() {
         let sceneVideo = Asset(
             name: "Cliff",
-            url: Bundle.main.url(forResource: "Cliff", withExtension: "mp4")!
+            url: Bundle.main.url(forResource: "Cliff2", withExtension: "mp4")!
         )
         videoAssets = [sceneVideo]
     }

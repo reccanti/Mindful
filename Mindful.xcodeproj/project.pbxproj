@@ -16,6 +16,7 @@
 		B71548E51EC825CB00D05AE6 /* CreateFavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71548E41EC825CB00D05AE6 /* CreateFavoriteVC.swift */; };
 		B71548E71ECA000700D05AE6 /* FavoritesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71548E61ECA000700D05AE6 /* FavoritesTableVC.swift */; };
 		B71548EA1ECA87F400D05AE6 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71548E91ECA87F400D05AE6 /* FileManager.swift */; };
+		B71548EC1ECAA9DF00D05AE6 /* Cliff2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B71548EB1ECAA8A800D05AE6 /* Cliff2.mp4 */; };
 		B735BECC1EBAE15B009C7786 /* Cliff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B735BECA1EBAD3BC009C7786 /* Cliff.mp4 */; };
 		B735BED01EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B735BECF1EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 */; };
 		B735BED41EBAFB3D009C7786 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735BED31EBAFB3D009C7786 /* Scene.swift */; };
@@ -38,6 +39,7 @@
 		B71548E41EC825CB00D05AE6 /* CreateFavoriteVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateFavoriteVC.swift; sourceTree = "<group>"; };
 		B71548E61ECA000700D05AE6 /* FavoritesTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesTableVC.swift; sourceTree = "<group>"; };
 		B71548E91ECA87F400D05AE6 /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		B71548EB1ECAA8A800D05AE6 /* Cliff2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cliff2.mp4; sourceTree = "<group>"; };
 		B735BEC91EBAD330009C7786 /* Mindful_Bridging_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mindful_Bridging_Header.h; sourceTree = "<group>"; };
 		B735BECA1EBAD3BC009C7786 /* Cliff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cliff.mp4; sourceTree = "<group>"; };
 		B735BECF1EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Breathing_Meditation.mp3; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		B735BECD1EBAED81009C7786 /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				B71548EB1ECAA8A800D05AE6 /* Cliff2.mp4 */,
 				B735BECA1EBAD3BC009C7786 /* Cliff.mp4 */,
 			);
 			name = Video;
@@ -253,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71548EC1ECAA9DF00D05AE6 /* Cliff2.mp4 in Resources */,
 				B7AE0BE11EBA2DBC007F515A /* LaunchScreen.storyboard in Resources */,
 				B71548E31EC5696100D05AE6 /* Raleway-Medium.ttf in Resources */,
 				B7AE0BDE1EBA2DBC007F515A /* Assets.xcassets in Resources */,

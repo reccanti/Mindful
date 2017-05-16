@@ -19,6 +19,9 @@
 		B71548EC1ECAA9DF00D05AE6 /* Cliff2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B71548EB1ECAA8A800D05AE6 /* Cliff2.mp4 */; };
 		B71548EE1ECAAFFF00D05AE6 /* Hills.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B71548ED1ECAAFB600D05AE6 /* Hills.mp4 */; };
 		B71548F01ECAB37600D05AE6 /* Beach.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B71548EF1ECAB37600D05AE6 /* Beach.mp4 */; };
+		B71548F21ECAB91F00D05AE6 /* Body-Scan-Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B71548F11ECAB91F00D05AE6 /* Body-Scan-Meditation.mp3 */; };
+		B71548F41ECAB92C00D05AE6 /* 04_Meditation_for_Working_with_Difficulties.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B71548F31ECAB92C00D05AE6 /* 04_Meditation_for_Working_with_Difficulties.mp3 */; };
+		B71548F61ECAB94200D05AE6 /* 05_Loving_Kindness_Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B71548F51ECAB94200D05AE6 /* 05_Loving_Kindness_Meditation.mp3 */; };
 		B735BECC1EBAE15B009C7786 /* Cliff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B735BECA1EBAD3BC009C7786 /* Cliff.mp4 */; };
 		B735BED01EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B735BECF1EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 */; };
 		B735BED41EBAFB3D009C7786 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735BED31EBAFB3D009C7786 /* Scene.swift */; };
@@ -44,6 +47,9 @@
 		B71548EB1ECAA8A800D05AE6 /* Cliff2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cliff2.mp4; sourceTree = "<group>"; };
 		B71548ED1ECAAFB600D05AE6 /* Hills.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hills.mp4; sourceTree = "<group>"; };
 		B71548EF1ECAB37600D05AE6 /* Beach.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Beach.mp4; sourceTree = "<group>"; };
+		B71548F11ECAB91F00D05AE6 /* Body-Scan-Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Body-Scan-Meditation.mp3"; sourceTree = "<group>"; };
+		B71548F31ECAB92C00D05AE6 /* 04_Meditation_for_Working_with_Difficulties.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 04_Meditation_for_Working_with_Difficulties.mp3; sourceTree = "<group>"; };
+		B71548F51ECAB94200D05AE6 /* 05_Loving_Kindness_Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 05_Loving_Kindness_Meditation.mp3; sourceTree = "<group>"; };
 		B735BEC91EBAD330009C7786 /* Mindful_Bridging_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mindful_Bridging_Header.h; sourceTree = "<group>"; };
 		B735BECA1EBAD3BC009C7786 /* Cliff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cliff.mp4; sourceTree = "<group>"; };
 		B735BECF1EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Breathing_Meditation.mp3; sourceTree = "<group>"; };
@@ -127,6 +133,9 @@
 		B735BECE1EBAED90009C7786 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				B71548F51ECAB94200D05AE6 /* 05_Loving_Kindness_Meditation.mp3 */,
+				B71548F31ECAB92C00D05AE6 /* 04_Meditation_for_Working_with_Difficulties.mp3 */,
+				B71548F11ECAB91F00D05AE6 /* Body-Scan-Meditation.mp3 */,
 				B735BECF1EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 */,
 			);
 			name = Audio;
@@ -265,11 +274,14 @@
 				B71548EE1ECAAFFF00D05AE6 /* Hills.mp4 in Resources */,
 				B71548EC1ECAA9DF00D05AE6 /* Cliff2.mp4 in Resources */,
 				B7AE0BE11EBA2DBC007F515A /* LaunchScreen.storyboard in Resources */,
+				B71548F21ECAB91F00D05AE6 /* Body-Scan-Meditation.mp3 in Resources */,
 				B71548E31EC5696100D05AE6 /* Raleway-Medium.ttf in Resources */,
 				B7AE0BDE1EBA2DBC007F515A /* Assets.xcassets in Resources */,
 				B7AE0BDC1EBA2DBC007F515A /* Main.storyboard in Resources */,
+				B71548F61ECAB94200D05AE6 /* 05_Loving_Kindness_Meditation.mp3 in Resources */,
 				B735BED01EBAEE01009C7786 /* 01_Breathing_Meditation.mp3 in Resources */,
 				B71548F01ECAB37600D05AE6 /* Beach.mp4 in Resources */,
+				B71548F41ECAB92C00D05AE6 /* 04_Meditation_for_Working_with_Difficulties.mp3 in Resources */,
 				B735BECC1EBAE15B009C7786 /* Cliff.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -89,6 +89,16 @@ class DataManager {
     }
     
     /**
+     * get favorite by name
+     */
+    func getFavoriteByName(name: String)->Scene? {
+        if let favorite = favorites[name] {
+            return favorite
+        }
+        return nil
+    }
+    
+    /**
      * Load favorites from the documents folder
      */
     func loadFavorites() {

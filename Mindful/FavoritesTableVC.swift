@@ -10,6 +10,8 @@ import UIKit
 
 class FavoritesTableVC: UITableViewController {
 
+    var selectedScene: Scene!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print(DataManager.instance.getFavoritesNames())
@@ -44,6 +46,16 @@ class FavoritesTableVC: UITableViewController {
         // Configure the cell...
         cell.textLabel?.text = DataManager.instance.getFavoritesNames()[indexPath.row]
         return cell
+    }
+    
+    /**
+     * Detect when the cell is tapped
+     */
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let name = tableView.cellForRow(at: indexPath)?.textLabel?.text {
+            selectedScene = DataManager.instance.getFavoriteByName(name: name)
+            performSegue(withIdentifier: "unwindWithScene", sender: self)
+        }
     }
 
     /*
@@ -81,14 +93,19 @@ class FavoritesTableVC: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "unwindWithScene" {
+            guard let destination = segue.destination as? SceneBuilderVC else {
+                return
+            }
+            destination.location = selectedScene.video
+            destination.meditationTrack = selectedScene.audio
+        }
     }
-    */
 
 }

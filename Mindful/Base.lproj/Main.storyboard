@@ -20,10 +20,10 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="edj-7d-bDV">
                             <rect key="frame" x="0.0" y="217.5" width="375" height="128"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="bottom" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="se6-3P-qDR">
-                                    <rect key="frame" x="8" y="80.5" width="357.5" height="48.5"/>
+                                    <rect key="frame" x="9" y="71" width="358" height="49"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                     <color key="backgroundColor" red="0.069868110120296478" green="0.57973355054855347" blue="0.43242192268371582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
@@ -37,7 +37,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="bottom" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGN-nr-7Ka">
-                                    <rect key="frame" x="8" y="22" width="357.5" height="51"/>
+                                    <rect key="frame" x="9" y="12" width="358" height="51"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                     <color key="backgroundColor" red="0.31614053250000002" green="0.74501222369999998" blue="0.81307238339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -229,9 +229,10 @@
         <!--Create Scene-->
         <scene sceneID="gv7-Ij-SeB">
             <objects>
-                <navigationController title="Create Scene" automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="xIN-bo-Myj" sceneMemberID="viewController">
+                <navigationController title="Create Scene" automaticallyAdjustsScrollViewInsets="NO" id="xIN-bo-Myj" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" clearsContextBeforeDrawing="NO" alpha="0.0" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Cg9-4R-FqS">
@@ -340,9 +341,19 @@
                             <outlet property="delegate" destination="Pfv-T3-yBg" id="oUC-si-o4c"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="fLi-iT-a0l"/>
+                    <navigationItem key="navigationItem" id="fLi-iT-a0l">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="us5-uV-93e">
+                            <connections>
+                                <segue destination="5Np-3b-Hml" kind="unwind" unwindAction="cancelToSceneBuilderWithSegue:" id="2Lq-gS-VCr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="5Np-3b-Hml" kind="unwind" identifier="unwindWithScene" unwindAction="unwindWithSceneWithSender:" id="sY3-Bz-7GQ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u37-hg-dUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="5Np-3b-Hml" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3140" y="-2128.785607196402"/>
         </scene>

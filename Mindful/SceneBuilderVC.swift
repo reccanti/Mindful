@@ -163,5 +163,12 @@ class SceneBuilderVC: UITableViewController {
     @IBAction func unwindWithLocation(sender: UIStoryboardSegue) {
         updateLabels()
     }
+    
+    /**
+     * Unwind to this view with both a meditation track and location
+     */
+    @IBAction func unwindWithScene(sender: UIStoryboardSegue) {
+        updateLabels()
+    }
 
 }

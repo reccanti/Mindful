@@ -49,11 +49,24 @@ class DataManager {
      * load meditation track assets
      */
     func loadTrackAssets() {
-        let sceneAudio = Asset(
-            name: "Breathing",
-            url: Bundle.main.url(forResource: "01_Breathing_Meditation", withExtension: "mp3")!
-        )
-        trackAssets = [sceneAudio]
+        trackAssets = [
+            Asset(
+                name: "Breathing",
+                url: Bundle.main.url(forResource: "01_Breathing_Meditation", withExtension: "mp3")!
+            ),
+            Asset(
+                name: "Working through Difficulties",
+                url: Bundle.main.url(forResource: "04_Meditation_for_Working_with_Difficulties", withExtension: "mp3")!
+            ),
+            Asset(
+                name: "Positive Thinking",
+                url: Bundle.main.url(forResource: "05_Loving_Kindness_Meditation", withExtension: "mp3")!
+            ),
+            Asset(
+                name: "Body Scan",
+                url: Bundle.main.url(forResource: "Body-Scan-Meditation", withExtension: "mp3")!
+            )
+        ]
     }
     
     // MARK: - Favorites functions
